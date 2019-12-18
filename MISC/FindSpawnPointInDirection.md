@@ -21,6 +21,15 @@ X2, Y2, Z2 is a given position ahead of that position?
 =======================================================  
 ```
 
+```
+We succefully used like this
+local target = PlayerPedId()
+local pc = GetEntityCoords(target)
+local offset = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 100, 100, 20)
+local heading, spawn = FindSpawnPointInDirection(offset.x, offset.y, offset.z, pc.x, pc.y, pc.z, 50.0)
+```
+
+
 ## Parameters
 * **x1**: 
 * **y1**: 
